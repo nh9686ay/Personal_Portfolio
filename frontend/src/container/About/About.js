@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useSpring } from 'framer-motion';
-import{images} from '../../constants';
+import {AppWrap} from '../../wrapper';
+// import{images} from '../../constants';
 import './About.scss';
 import { urlFor, client } from '../../client';
 // const abouts =[
@@ -43,4 +44,4 @@ const About = () => {
     </>
   );
 }
-export default About
+export default AppWrap(About, 'about');
